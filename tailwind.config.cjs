@@ -40,7 +40,8 @@ module.exports = {
         fantasia: "url(./assets/fantasia.jpg)",
         terror: "url(./assets/terror.jpg)",
         drama:"url(./assets/drama.webp)",
-        animados:"url(./assets/animados.avif)"
+        animados:"url(./assets/animados.avif)",
+        about : "url(./assets/pexels-element-digital-1370296.jpg)"
       }
     },
   },
