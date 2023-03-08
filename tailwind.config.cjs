@@ -31,17 +31,17 @@ module.exports = {
         '2xl': '1280px',
       },
       backgroundImage: {
-        inicio: "url('./assets/pexels-lil-artsy-3368816.jpg')",
-        categoria : "url(./assets/pexels-koshevayak-4170629.jpg)",
-        autor : "url(./assets/pexels-aline-viana-prado-2465877.jpg)",
-        fecha: "url(./assets/pexels-stanislav-kondratiev-2908984.jpg)",
+        inicio: "url('./assets/inicio.jpg')",
+        categoria : "url(./assets/categoria.jpg)",
+        autor : "url(./assets/autor.jpg)",
+        fecha: "url(./assets/fecha.jpg)",
         ciencias:"url(./assets/ComboLibrosReyes2017bis.jpg)",
         romance: "url(./assets/thumbnail_7DEBE86E-538D-4DF6-80C6-1C23E7A8ECE9.webp)",
         fantasia: "url(./assets/fantasia.jpg)",
         terror: "url(./assets/terror.jpg)",
         drama:"url(./assets/drama.webp)",
         animados:"url(./assets/animados.avif)",
-        about : "url(./assets/pexels-element-digital-1370296.jpg)"
+        about:"url(./assets/about.jpg)"
       }
     },
   },
