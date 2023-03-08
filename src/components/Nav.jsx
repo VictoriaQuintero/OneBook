@@ -32,17 +32,23 @@ function Nav() {
               onClick={cambio}
             />
             <Link to={"/about"}>
-              <li className="p-4 hover:border-letrasHead hover:border-2 hover:bg-marronOscuro hover:bg-opacity-30 hover:rounded-lg sm:text-lg">
+              <li 
+              onClick={cambio}
+              className="p-4 hover:border-letrasHead hover:border-2 hover:bg-marronOscuro hover:bg-opacity-30 hover:rounded-lg sm:text-lg">
                 Sobre Nosotros
               </li>
             </Link>
             <Link to={"/categorias"}>
-              <li className="p-4 hover:border-letrasHead hover:border-2 hover:bg-marronOscuro hover:bg-opacity-30 hover:rounded-lg sm:text-lg">
+              <li 
+              onClick={cambio}
+              className="p-4 hover:border-letrasHead hover:border-2 hover:bg-marronOscuro hover:bg-opacity-30 hover:rounded-lg sm:text-lg">
                 Categorias
               </li>
             </Link>
             <Link to={"/unirme"}>
-              <li className="p-4  hover:border-letrasHead hover:border-2 hover:bg-marronOscuro hover:bg-opacity-30 hover:rounded-lg sm:text-lg">
+              <li
+              onClick={cambio}
+              className="p-4  hover:border-letrasHead hover:border-2 hover:bg-marronOscuro hover:bg-opacity-30 hover:rounded-lg sm:text-lg">
                 Quiero unirme
               </li>
             </Link>
