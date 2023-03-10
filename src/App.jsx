@@ -6,6 +6,7 @@ import About from "./components/About";
 import Categorias from "./components/Categorias";
 import Landing from "./components/Landing";
 import Footer from "./components/Footer";
+import GenericNotFound from "./components/GenericNotFound";
 function App() {
   return (
     <div className="App min-h-screen">
@@ -18,6 +19,7 @@ function App() {
             <Route path="/unirme" element={<Landing />} />
           </Route>
         </Route>
+        <Route path="*" element={<GenericNotFound />} />
       </Routes>
     </div>
   );
