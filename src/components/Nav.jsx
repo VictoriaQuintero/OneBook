@@ -12,13 +12,9 @@ function Nav() {
   }
   return (
     <div>
-      <header className="bg-marronForm flex items-center justify-between px-10">
+      <header className="bg-marronForm flex items-center justify-between px-10 py-2">
         <Link to={'/'}>
-          <img
-            src="src\assets\LogoSample_ByTailorBrtands-PhotoRoom.png-PhotoRoom.png"
-            className=""
-            alt=""
-          />
+          <p className="font-fj text-2xl p-5 animate-pulse">O|N|E|B|O|O|K</p>
         </Link>
         <nav className="">
           <ul
