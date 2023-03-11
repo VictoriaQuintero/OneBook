@@ -1,35 +1,41 @@
 import { useState } from "react";
-import Swal from 'sweetalert2'
+import Swal from "sweetalert2";
 import Boton from "./Button";
 function Landing() {
   const [nombre, setNombre] = useState("");
   const [correo, setCorreo] = useState("");
 
   function envioData(e) {
-    if(nombre.trim().length < 3){
-
-    }
-    e.preventDefault();
-    fetch("https://dummyjson.com/posts/add", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        title: "I am in love with someone.",
-        userId: 5,
-      }),
-    })
-      .then((res) =>{
-        if(res.ok == true){
-            Swal.fire({
-                position: 'center',
-                icon: 'success',
-                title: 'Usuario Agregado!',
-                showConfirmButton: false,
-                timer: 1500,
-            })
+      e.preventDefault();
+    if (nombre.trim().length < 3 || !isNaN(nombre)) {
+      Swal.fire({
+        position: "center",
+        icon: "error",
+        title:
+          "Agregue un Nombre Valido (sin espacios en blanco y sin numeros)",
+        showConfirmButton: false,
+        timer: 2000,
+      });
+    } else {
+      fetch("https://dummyjson.com/posts/add", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          title: "I am in love with someone.",
+          userId: 5,
+        }),
+      }).then((res) => {
+        if (res.ok == true) {
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Usuario Agregado!",
+            showConfirmButton: false,
+            timer: 1500,
+          });
         }
-      })
-      
+      });
+    }
   }
 
   return (
